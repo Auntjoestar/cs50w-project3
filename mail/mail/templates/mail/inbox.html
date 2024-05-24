@@ -30,6 +30,34 @@
             <input type="submit" class="btn btn-primary"/>
         </form>
     </div>
+
+    <div id="read-view">
+        
+        <div id="read-sender">
+            <label for="sender">From: </label>
+            <span name="sender" id="sender"></span>
+        </div>
+        <div id="read-recipients">
+            <label for="recipients">To: </label>
+            <span name ="recipients" id="recipients"></span>
+        </div>
+        <div id="read-subject">
+            <label for="subject">Subject: </label>
+            <span id="subject"></span>
+        </div>
+        <div id="read-time">
+            <label for="time">Timestamp: </label>
+            <span id="time"></span>
+        </div>
+        <div id="read-body">
+            <label for="body"></label>
+            <div name="body" id="body" style="white-space: pre">
+            </div>
+        </div>
+        <div id="read-answer">
+            <input type="button" id="answer" value="Answer"></input>
+        </div>
+    </div>
 {% endblock %}
 
 {% block script %}

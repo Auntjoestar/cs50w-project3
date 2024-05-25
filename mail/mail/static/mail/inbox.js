@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (event.state) {
       if (event.state.view === 'compose') {
         compose_email(false);
-      } else if (event.state.view === 'read') {
+      } 
+      else if (event.state.view === 'read') {
         viewEmail(event.state.email, event.state.mailbox, false);
-      } else {
+      } 
+      else {
         load_mailbox(event.state.mailbox, false);
       }
     }
@@ -184,7 +186,8 @@ function listEmail(emails, mailbox) {
             load_mailbox('inbox', true);
           });
       });
-    } else if (mailbox === "archive") {
+    } 
+    else if (mailbox === "archive") {
       const unarchiveButton = document.createElement('input');
       unarchiveButton.className = "btn btn-secondary";
       unarchiveButton.value = "unarchive";
@@ -239,7 +242,8 @@ function viewEmail(email, mailbox, pushState = false) {
       compose_email(true);
       answerEmail(email);
     };
-  } else {
+  } 
+  else {
     answer.style.display = "none";
   }
 

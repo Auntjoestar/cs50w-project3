@@ -54,8 +54,11 @@ function compose_email(pushState = false) {
           load_mailbox('sent', true);
         }
         else {
+          alert.innerHTML = ''
           alert.style.display = 'block';
-          alert.innerHTML = result.error;
+          const message = document.createElement('strong')
+          message.innerHTML = result.error;
+          alert.appendChild(message)
         }
       });
   };

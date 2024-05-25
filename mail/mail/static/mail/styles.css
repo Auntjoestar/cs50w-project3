@@ -1,3 +1,136 @@
-textarea {
+@media (min-width: 768px) {
+  body {
+    background-color: #FFF !important;
+  }
+  #compose-body {
     min-height: 400px;
+    margin-bottom: 1%;
+  }
+  .email {
+    margin: 1%;
+    border: 2px groove #151515 !important;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .email .about {
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    align-items: center;
+    text-wrap: nowrap;
+  }
+  .email .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    align-items: center;
+  }
+  .email .info .btn-primary {
+    height: 50%;
+  }
+  .email .info .btn-secondary {
+    height: 50%;
+  }
+  #read-view label {
+    font-weight: bold;
+  }
+  #read-view #read-body {
+    margin-bottom: 1%;
+  }
+  #read-view #read-body #body {
+    background-color: #EEEEEE;
+    border: 1px solid #151515;
+    padding: 1%;
+    white-space: pre;
+  }
 }
+@media (max-width: 767px) {
+  body {
+    background-color: #FFF !important;
+    width: 100vw;
+  }
+  button, a.btn {
+    margin-bottom: 1% !important;
+  }
+  #compose-body {
+    min-height: 40vh;
+    margin-bottom: 2%;
+  }
+  #emails-view h3 {
+    font-size: 1em;
+  }
+  #compose-view h3 {
+    font-size: 1em;
+  }
+  #compose-view input {
+    font-size: 0.7em;
+    height: 2%;
+  }
+  #compose-view #compose-body {
+    font-size: 0.7em;
+    height: 2%;
+  }
+  #compose-view .label {
+    font-size: 0.8em;
+  }
+  .email {
+    margin: 1%;
+    border: 2px groove #151515 !important;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .email .about {
+    font-size: 0.9em;
+    justify-content: space-between;
+    gap: 20%;
+    align-items: center;
+    text-wrap: nowrap;
+    width: fit-content;
+  }
+  .email .about h5 {
+    font-size: 0.9em;
+  }
+  .email .about p {
+    font-size: 0.8em;
+  }
+  .email .info {
+    gap: 20%;
+    align-items: center;
+  }
+  .email .info .btn {
+    font-size: 0.7em;
+    height: 3%;
+  }
+  .email .info .btn-secondary {
+    height: 25%;
+  }
+  .email .info p {
+    font-size: 0.6em;
+  }
+  #read-view {
+    font-size: 0.8em;
+  }
+  #read-view label {
+    font-weight: bold;
+  }
+  #read-view #read-body {
+    margin-bottom: 2%;
+  }
+  #read-view #read-body #body {
+    background-color: #EEEEEE;
+    border: 1px solid #151515;
+    padding: 1%;
+    white-space: preserve-breaks;
+    word-wrap: break-word;
+  }
+  #read-view #answer {
+    font-size: 0.85em;
+    height: 2%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

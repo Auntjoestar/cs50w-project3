@@ -17,11 +17,13 @@
     <div id="compose-view">
         <h3>New Email</h3>
         <form id="compose-form">
+            <div class="alert alert-danger" role="alert">
+              </div>
             <div class="form-group">
-                From: <input disabled class="form-control" value="{{ request.user.email }}">
+                <span class="label">From: </span><input disabled class="form-control" value="{{ request.user.email }}">
             </div>
             <div class="form-group">
-                To: <input id="compose-recipients" class="form-control">
+                <span class="label">To: </span><input id="compose-recipients" class="form-control">
             </div>
             <div class="form-group">
                 <input class="form-control" id="compose-subject" placeholder="Subject">
@@ -49,9 +51,10 @@
             <label for="time">Timestamp: </label>
             <span id="time"></span>
         </div>
+        <hr>
         <div id="read-body">
-            <label for="body"></label>
-            <div name="body" id="body" style="white-space: pre">
+            <label for="body">Body: </label>
+            <div name="body" id="body">
             </div>
         </div>
         <div id="read-answer">

@@ -1,0 +1,147 @@
+$black: #151515;
+$button-background: #76ABAE;
+$white: #EEEEEE;
+$background: #FFF;
+
+
+@media (min-width: 768px) {
+    body {
+        background-color: $background !important;
+    }
+    #compose-body {
+        min-height: 400px;
+        margin-bottom: 1%;
+    }
+    .email {
+        margin: 1%;
+        border: 2px groove $black !important;
+        padding: 1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about {
+            display: flex;
+            justify-content: space-between;
+            gap: 20%;
+            align-items: center;
+            text-wrap: nowrap;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            gap: 20%;
+            .btn-primary{
+                height: 50%;;
+            }
+            .btn-secondary {
+                height: 50%;
+            }
+            align-items: center;
+        }
+    }
+    #read-view {
+        label {
+            font-weight: bold;
+        }
+        #read-body {
+            margin-bottom: 1%;
+            #body {
+                background-color: $white;
+                border: 1px solid $black;
+                padding: 1%;
+                white-space: pre;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: $background !important;
+        width: 100vw;
+    }
+    button, a.btn {
+        margin-bottom: 1% !important;
+    }
+    #compose-body {
+        min-height: 40vh;
+        margin-bottom: 2%;
+    }
+    #emails-view {
+        h3 {
+            font-size: 1em;
+        }
+    }
+    #compose-view {
+        h3 {
+            font-size: 1em;
+        }
+        input {
+            font-size: 0.7em;
+            height: 2%;
+        }
+        #compose-body {
+            font-size: 0.7em;
+            height: 2%;
+        }
+        .label {
+            font-size: 0.8em;
+        }
+    }
+    .email {
+        margin: 1%;
+        border: 2px groove $black !important;
+        padding: 1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about {
+            font-size: 0.9em;                   
+            justify-content: space-between;
+            gap: 20%;
+            align-items: center;
+            text-wrap: nowrap;
+            width: fit-content;
+            h5 {
+                font-size: 0.9em;
+            }
+            p {
+                font-size: 0.8em;
+            }
+        }
+        .info {
+            gap: 20%;
+            .btn {
+                font-size: 0.7em;
+                height: 3%;
+            }
+            .btn-secondary {
+                height: 25%;
+            }
+            align-items: center;
+            p {
+                font-size: 0.6em;
+            }
+        }
+    }
+    #read-view {
+        font-size: 0.8em;
+        label {
+            font-weight: bold;
+        }
+        #read-body {
+            margin-bottom: 2%;
+            #body {
+                background-color: $white;
+                border: 1px solid $black;
+                padding: 1%;
+                white-space: preserve-breaks;
+                word-wrap: break-word;
+            }
+        }
+        #answer {
+            font-size: 0.85em;
+            height: 2%;
+        }
+    }
+}
